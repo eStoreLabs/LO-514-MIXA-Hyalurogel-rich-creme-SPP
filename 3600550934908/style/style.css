@@ -9,7 +9,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
-  max-width: 998px;
+  max-width: 769px;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
@@ -493,9 +493,10 @@ body {
 #es-mixa.es-mixa .es-cross__link:hover {
   background: #0084d3;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 730px) {
   #es-mixa.es-mixa .es-kv__content {
     justify-content: space-between;
+    flex-basis: 50%;
   }
   #es-mixa.es-mixa .es-kv__bottom {
     margin-bottom: 32px;
@@ -519,22 +520,26 @@ body {
     width: 100%;
   }
   #es-mixa.es-mixa .es-kv__img--plus {
-    scale: 1.1;
     left: -189px;
-    top: 69%;
+    top: 60%;
+  }
+  #es-mixa.es-mixa .es-kv__img--packshot {
+    margin-left: -40px;
   }
   #es-mixa.es-mixa .es-kv__packshot {
-    margin-right: -32px;
-    margin-left: 133px;
+    margin-left: 126px;
     padding-top: 60px;
+    margin-bottom: 10px;
   }
   #es-mixa.es-mixa .es-kv__wrapper {
     display: flex;
+    position: relative;
   }
   #es-mixa.es-mixa .es-kv__texts {
-    position: relative;
+    position: absolute;
     z-index: 1;
-    margin-left: -40px;
+    right: 10px;
+    top: -5px;
   }
   #es-mixa.es-mixa .es-benefits__container {
     display: flex;
@@ -568,14 +573,22 @@ body {
   #es-mixa.es-mixa .es-features__container {
     flex-flow: row;
     align-items: flex-end;
+    position: relative;
   }
   #es-mixa.es-mixa .es-features__image {
     flex: 1;
     order: 2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 61%;
+    z-index: 0;
   }
   #es-mixa.es-mixa .es-features__content {
     flex: 1;
     gap: 48px;
+    z-index: 1;
+    max-width: 64%;
   }
   #es-mixa.es-mixa .es-features__feature {
     display: flex;
@@ -595,6 +608,9 @@ body {
   }
   #es-mixa.es-mixa .es-formula__title {
     margin-block: 64px;
+  }
+  #es-mixa.es-mixa .es-formula__single {
+    width: 45%;
   }
   #es-mixa.es-mixa .es-routine__container {
     flex-direction: row;
