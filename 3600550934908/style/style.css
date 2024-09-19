@@ -9,7 +9,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
-  max-width: 769px;
+  max-width: 731px;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
@@ -33,6 +33,10 @@ body {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+
+#es-mixa.es-mixa .es-kv__img--photo {
+  width: 100%;
 }
 #es-mixa.es-mixa .es-kv__img--plus {
   position: absolute;
@@ -274,6 +278,7 @@ body {
   font-size: 30px;
   text-transform: uppercase;
   margin-bottom: 32px;
+  text-wrap: balance;
 }
 #es-mixa.es-mixa .es-formula__container {
   display: flex;
@@ -326,6 +331,7 @@ body {
   font-family: inherit;
   font-weight: inherit;
   text-align: center;
+  text-wrap: balance;
 }
 #es-mixa.es-mixa .es-routine {
   margin-bottom: 32px;
@@ -493,7 +499,7 @@ body {
 #es-mixa.es-mixa .es-cross__link:hover {
   background: #0084d3;
 }
-@media screen and (min-width: 730px) {
+@media (min-width: 710px) {
   #es-mixa.es-mixa .es-kv__content {
     justify-content: space-between;
     flex-basis: 50%;
@@ -688,4 +694,4 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
-}/*# sourceMappingURL=style.css.map */
+}
